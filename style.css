@@ -51,7 +51,7 @@
 #main {
   display: flex;
   flex-direction: row;
-  padding: 50px 100px;
+  padding: 50px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
@@ -138,14 +138,14 @@
   margin-bottom: 10px;
 }
 
+
+/* Responsiveness */
+
 @media (min-width: 300px) and (max-width: 420px) {
-  html,
-  body {
-    overflow: hidden;
-  }
 
   #main {
     flex-direction: column;
+    padding: 0;
     align-items: center;
     gap: 1rem;
   }
@@ -161,15 +161,12 @@
 
   .heading h1 {
     font-size: 2rem;
+    margin-top: 1rem;
   }
 
   #addBtn {
     height: 40px;
     width: 100px;
     font-size: 12px;
-  }
-
-  #addBtn i {
-    margin-right: 2px;
   }
 }
